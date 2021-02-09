@@ -10,7 +10,7 @@ def setup():
     core.WINDOW_SIZE = [1600, 800]
 
     for i in range(0, 1000):
-        drops.append(Drop(400))
+        drops.append(Drop(1600))
 
     print("Setup END-----------")
 
@@ -18,7 +18,7 @@ def setup():
 def run():
     print("Run")
     for d in drops:
-        d.tomber(400)
+        d.tomber(800)
         d.afficher(core)
 
 
