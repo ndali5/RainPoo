@@ -8,10 +8,10 @@ class Drop:
 
     def __init__(self,largeur):
         self.gravity = random.randint(5, 20)
-        self.size = 2
-        self.R = 255
-        self.V = 255
-        self.B = 255
+        self.size = random.randint(5,20)
+        self.R = random.randint(0,255)
+        self.V = random.randint(0,255)
+        self.B = random.randint(0,255)
         self.position = Vector2(random.randint(0,largeur), 0)
 
     def tomber(self, taillefenetre):
